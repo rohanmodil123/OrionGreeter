@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Orion Greeter
+Comment=Orion LightDM Greeter
+Exec=python3 /usr/bin/Orion.py
+Type=Application
