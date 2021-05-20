@@ -1,0 +1,9 @@
+[Unit]
+Description=Display Manager
+After=systemd-user-sessions.service
+
+[Service]
+ExecStart=dm.py
+
+[Install]
+Alias=dm.service
