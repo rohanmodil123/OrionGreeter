@@ -1,3 +1,3 @@
-# Orion LightDM Greeter
+# Display Manager
 
 #### Placeholder
