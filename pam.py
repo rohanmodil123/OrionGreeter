@@ -88,8 +88,9 @@ class pam():
             return response
 
         # if X DISPLAY is set, use it, otherwise get the STDIN tty
-        ctty = os.environ.get('DISPLAY', os.ttyname(0)).encode(encoding)
-
+        # ctty = os.environ.get('DISPLAY', os.ttyname(0)).encode(encoding)
+        ctty = os.environ.get('DISPLAY', "/dev/tty1").encode(encoding)
+        
         p = PAM.pam()
         try:
             p.start(service, username, conv)
