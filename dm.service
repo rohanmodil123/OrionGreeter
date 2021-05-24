@@ -3,7 +3,8 @@ Description=Display Manager
 After=systemd-user-sessions.service
 
 [Service]
-ExecStart=dm.py
+ExecStart=/home/rohan/OrionGreeter/dm.sh
 
 [Install]
-Alias=dm.service
+WantedBy=multi-user.target
+#Alias=dm.service
